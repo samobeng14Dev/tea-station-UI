@@ -151,3 +151,36 @@ p {
 	font-size: 1.25rem;
 	padding: 1.5rem 1.75rem;
 }
+/* -----content divider */
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient(to left,var(--cl-primary),#e9b949,var(--cl-primary));
+    margin: 0 auto 2rem auto;
+}
+.skills{
+	background: var(--cl-grey-10);
+}
+.skill {
+	padding: 2.5rem 0;
+	text-align: center;
+	transition: var(--transition);
+}
+.skill-icon{
+	font-size: 2.5rem;
+	margin-bottom: 2.5rem;
+	display: inline-block;
+	color: var(--cl-primary);
+}
+.skill-text{
+	color:var(--cl-grey-5);
+	max-width: 17rem;
+	margin: 0 auto;
+
+}
+.skill:hover{
+	background: var(--cl-white);
+	box-shadow: 0 2px var(--cl-primary);
+}
+.skill:hover .skill-icon{
+transform: translateY(-5px);
+}
