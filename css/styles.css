@@ -114,7 +114,11 @@ p {
 	background: var(--cl-primary-light);
 	color: var(--cl-primary);
 }
-
+.clearfix::after,.clearfix::before{
+	content: '';
+	display: table;
+	clear: both;
+}
 /*
      -------Header------- 
       */
@@ -183,4 +187,17 @@ p {
 }
 .skill:hover .skill-icon{
 transform: translateY(-5px);
+}
+
+@media screen and (min-width:576px){
+	.skill{
+		float:left;
+		width: 50%;
+	}
+}
+@media screen and (min-width:1200px) {
+	.skill {
+		float: left;
+		width: 25%;
+	}
 }
